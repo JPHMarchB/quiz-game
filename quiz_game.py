@@ -3,7 +3,7 @@ print("Welcome to Git Version Control quiz!")
 playing = input("Would you like to play?(type Y/N) ")
 
 if (playing.lower().strip() != 'y'):
-    print("Game shut down")
+    print("Game shut down...")
     quit()
 
 print("Let's play! :)")
@@ -48,9 +48,14 @@ else:
     print("Uh oh incorrect!")
 
 
+# 100% score
 if (score == 4):
     print("Thank you for playing! You got all the questions corret, amazing job!")
+
+# 0% score
 elif (score == 0):
     print("Maybe you should head back to the documentation...")
+
+# Any other % score
 else:
     print("Thank you for playing! You got", score, "questions correct, not bad!")
